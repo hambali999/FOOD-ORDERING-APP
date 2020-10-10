@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Order App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <header>
-        <h1>The K-Town Bar & Grill</h1>
+        <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <h1 class="display-4">The K-Town Bar & Gril</h1>
+          </div>    
     </header>
 
+      
     <main>
         <div id="firstline">
-            <div id="appetizer">
+            <div id="appetizer"  class="mx-auto text-center">
                 <p> Please select one item from the Appetizer Menu</p>
                 <ol>
                     <li class="appetizer-list">** No Selection ** $0.00</li>
@@ -26,7 +30,7 @@
                 <input type="text" class="order-no-1" value="1">
             </div>
         
-            <div id="entree">
+            <div id="entree"  class="pt-md-5 mx-auto text-center">
                 <p>Please select one item from the Entree Menu</p>
                 <ol>
                     <li class="entree-list">** No Selection ** $0.00</li>
@@ -42,7 +46,7 @@
             </div>
         
          <div id="secondline">
-            <div id="dessert">
+            <div id="dessert"  class="text-center pt-md-5">
                 <p>Please select one item from the Dessert Menu</p>
                 <o>
                     <li class="dessert-list">** No Selection ** $0.00</li>
@@ -55,7 +59,7 @@
                 <input type="text" class="order-no-3" value="1">
             </div>
         
-            <div id="beverages">
+            <div id="beverages"  class="pt-md-5 pb-md-4 mx-auto text-center">
                 <p>Please select one item from the Beverage Menu</p>
                 <ol>
                     <li class="beverage-list">** No Selection ** $0.00</li>
@@ -71,13 +75,13 @@
             </div>
             </div>
         
-            <div id="button">
+            <div id="button"  class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
                 <button id="complete-btn">Complete Order</button>
                 <button id="clear-btn">Clear Order</button>
             </div>
             
         
-            <div class="order-output">
+            <div class="order-output"  class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
                 <h3 id="output-title"></h3>
                 <p id="output-order-1"></p>
                 <p id="output-order-2"></p>
@@ -87,7 +91,9 @@
             </div>
     </main>
     
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>
 </html>
